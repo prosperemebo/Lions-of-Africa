@@ -1,0 +1,40 @@
+.about-section {
+  .header__textbox {
+    text-align: center;
+    margin: 20vh auto;
+
+    @include respond(phone) {
+      margin: 10vh auto;
+      width: 85%;
+    }
+  }
+
+  .desc {
+    width: 70%;
+    margin: 20vh auto;
+
+    @include respond(phone) {
+      margin: 10vh auto;
+      width: 85%;
+    }
+  }
+
+  figure {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.roadmap-section {
+  figure {
+    width: 80%;
+    margin: 20vh auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
