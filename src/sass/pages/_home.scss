@@ -1,7 +1,9 @@
 .about-section {
   .header__textbox {
     text-align: center;
-    margin: 20vh auto;
+    padding: 20vh auto;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
 
     @include respond(phone) {
       margin: 10vh auto;
@@ -35,6 +37,51 @@
 
     img {
       width: 100%;
+    }
+  }
+}
+
+.team-section {
+  margin-bottom: 20rem;
+  .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+
+    @media only screen and (max-width: 450px) {
+      display: block;
+    }
+
+    .person {
+      text-align: center;
+
+      @media only screen and (max-width: 450px) {
+        margin-bottom: 10rem;
+      }
+
+      img {
+        height: 20rem;
+        border-radius: 2rem;
+        margin-bottom: 1.6rem;
+
+        @media only screen and (max-width: 450px) {
+          width: 70%;
+          height: auto;
+        }
+      }
+
+      figcaption {
+        font-family: $secondary-font;
+
+        h3 {
+          font-weight: bold;
+          font-size: 2rem;
+          color: $color-secondary;
+          margin-bottom: 1.6rem;
+        }
+      }
     }
   }
 }
